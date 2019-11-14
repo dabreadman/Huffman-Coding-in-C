@@ -10,7 +10,6 @@
 
 int main(int argc, char ** argv)
 {
-//  int char_freqs[NUM_CHARS];
   struct huffcoder * coder;
   int valid_command = 0;
 

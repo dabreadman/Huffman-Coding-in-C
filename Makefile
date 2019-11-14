@@ -1,5 +1,6 @@
 all: main.c huff.c huff.h bitfile.c bitfile.h
-	gcc -Wall -g -o huff main.c bitfile.c huff.c -I. -lm
+	gcc -Wall -O0 -g -o huff main.c bitfile.c huff.c -I. -lm
+	gcc -Wall -O0 -g -o huff_be main.c bitfile.c huff.c -I. -lm
 
 test: showcodes encode decode
 

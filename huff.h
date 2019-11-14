@@ -34,13 +34,15 @@ struct huffcoder{
 //create a new compund huffchar structure
 struct huffchar * new_union_huff(int f, int seq, struct huffchar* l, struct huffchar * r);
 
-
 // create a new huffcoder structure
 struct huffcoder *  huffcoder_new();
 
 // count the frequency of characters in a file; set chars with zero
 // frequency to one
 void huffcoder_count(struct huffcoder * this, char * filename);
+
+//find the haffcahr with lowest frequency and remove it from the list
+struct huffchar * removeLowest(struct huffcoder * coder);
 
 // using the character frequencies build the tree of compound
 // and simple characters that are used to compute the Huffman codes
