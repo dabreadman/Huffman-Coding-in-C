@@ -23,7 +23,8 @@ This allow more frequent characters to be encoded using shorter encoding, which 
 2. Reads bit by bit.
 
 3.0 If there is a match after comparing the the table, write the corresponding character into the output file.
-3.1 If there is no match, buffer the bit and add another bit after it. Repeat 3.0
+3.1 If there is no match, buffer the bit and read another bit and add it after the buffered bit(s). 
+    Repeat 3.0
 
 Thanks for Lexes for helping me.  
 Lexes: https://github.com/lexesjan 
